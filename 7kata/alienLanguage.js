@@ -1,6 +1,5 @@
 function alienLanguage(str){
-    return str.split(' ').map(el=>el.toUpperCase() + el.substring()).join(' ');
-
+    return str.split(' ').map(el=>el.slice(0,-1).toUpperCase() + el.substring(el.length-1).toLowerCase()).join(' ');
 }
 
 
